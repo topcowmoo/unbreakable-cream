@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const routes = require('./controllers/index');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
@@ -46,6 +45,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Connect to the controllers folder
 app.use(routes);
 
-sequelize.sync().then(()=> {
+sequelize.sync({ force: true }).then(()=> {
   app.listen(PORT, () => console.log(`Now listening at http://localhost:${PORT}`));
 });
+

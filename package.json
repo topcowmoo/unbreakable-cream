@@ -19,7 +19,6 @@
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
     "mysql2": "^3.9.2",
-    "path": "^0.12.7",
     "sequelize": "^6.37.1"
   },
   "devDependencies": {
