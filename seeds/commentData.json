@@ -1,0 +1,17 @@
+[
+  {
+    "comment_text": "This is a great recipe!",
+    "user_id": 1,
+    "post_id": 1
+  },
+  {
+    "comment_text": "I can't wait to try this!",
+    "user_id": 2,
+    "post_id": 1
+  },
+  {
+    "comment_text": "I love this recipe!",
+    "user_id": 3,
+    "post_id": 2
+  }
+]

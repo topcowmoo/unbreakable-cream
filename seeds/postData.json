@@ -1,0 +1,27 @@
+[
+  {
+    "post_title": "Test Post 1",
+    "post_content": "This is a test post 1",
+    "user_id": 1
+  },
+  {
+    "post_title": "Test Post 2",
+    "post_content": "This is a test post 2",
+    "user_id": 1
+  },
+  {
+    "post_title": "Test Post 3",
+    "post_content": "This is a test post 3",
+    "user_id": 1
+  },
+  {
+    "post_title": "Test Post 4",
+    "post_content": "This is a test post 4",
+    "user_id": 1
+  },
+  {
+    "post_title": "Test Post 5",
+    "post_content": "This is a test post 5",
+    "user_id": 1
+  }
+]
