@@ -84,14 +84,14 @@ router.post('/login', async (req, res,) => {
     const passwordIsValid = user.checkPassword(req.body.password);
     // If the password is falsey, respond with a 400 status and an error message
     if (!passwordIsValid) {
-      res.status(400).json({error: 'Invalid pusername or password'});
+      res.status(400).json({error: 'Invalid username or password'});
       return;
     }
     // Save the session data upon successful login
     req.session.save(() => {
       req.session.userId = user.id;
       req.session.username = user.username;
-      req.session.loggIn = true;
+      req.session.loggedIn = true;
       // Respond with a JSON object indicating a successful login
       res.json({message: ' Successfully logged in'});
     });
