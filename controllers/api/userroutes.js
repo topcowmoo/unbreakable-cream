@@ -189,3 +189,5 @@ router.post('/:userId/favorite/:postId', async (req, res) => {
     res.status(500).json({ error: 'Failed to favorite post' });
   }
 });
+
+module.exports = router;
