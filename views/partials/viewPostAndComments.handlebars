@@ -1,0 +1,16 @@
+<section class='comment-section'>
+  <h2>Comments</h2>
+  <ul>
+    {{#each comments}}
+      <li>
+        <p>{{this.comment}}</p>
+        <p>{{this.author}}</p>
+      </li>
+    {{/each}}
+  </ul>
+  <form id='comment-form'>
+    <input type='text' id='comment' name='comment' placeholder='Comment' />
+    <input type='text' id='author' name='author' placeholder='Author' />
+    <button type='submit'>Submit</button>
+  </form>
+</section>
