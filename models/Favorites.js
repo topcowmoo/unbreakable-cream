@@ -22,7 +22,7 @@ Favorites.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'post',
-        key: 'id',
+        key: 'post_id',
       },
     },
   },
