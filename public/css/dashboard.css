@@ -2,14 +2,15 @@
 .card-title:hover,
 .card-options p:hover {
   cursor: pointer;
-  color: var(--light-blue);
+  color: var(--accent-color);
 }
 
 /* Card styles */
 .card {
   margin: 2.5%;
-  border: 3px solid var(--dark-blue);
-  background-color: white;
+  border: 2px solid var(--dark-accent-color);
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px 0px var(--dark-accent-color);
 }
 
 .card-body {
@@ -20,8 +21,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1%;
-  background-color: var(--dark-blue);
-  color: white;
+  background-color: var(--background-color);
+  color: var(--dark-accent-color);
 }
 
 .card-head h3 {

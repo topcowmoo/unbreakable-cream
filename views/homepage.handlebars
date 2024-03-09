@@ -1,0 +1,10 @@
+{{! Homepage }}
+<section class='dashboard'>
+  <h2 class='dashboard-head'>Whats New?</h2>
+
+  <div class='posts'>
+    {{#each posts}}
+      {{> homePostDetails }} 
+    {{/each}}
+  </div>
+</section>
