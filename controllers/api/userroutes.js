@@ -1,6 +1,6 @@
 // Import modules
 const router = require('express').Router();
-const { User, Post, Comment } = require('../../models');
+const { User, Post, Comment, Like, Favorite } = require('../../models');
 
 
 // GET route to Display all users

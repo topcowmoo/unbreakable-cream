@@ -7,10 +7,14 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
-      include: [{ model: User, attributes: ['username'] }],
+      include: [
+        { model: User },
+        { model: Comment }
+      ],
     });
     res.status(200).json(postData);
   } catch (err) {
+    console.error(err);
     // Handle errors
     res.status(500).json(err);
   }

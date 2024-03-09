@@ -13,6 +13,14 @@ User.hasMany(Post, {
 User.hasMany(Comment, {
   foreignKey: 'user_id',
 });
+// Build one-to-many relationship between User and Like.
+User.hasMany(Like, {
+  foreignKey: 'user_id',
+});
+// Build one-to-many relationship between User and Favorites.
+User.hasMany(Favorites, {
+  foreignKey: 'user_id',
+});
 
 // Build one-to-many relationship between Post and Comment.
 Post.hasMany(Comment, {
@@ -27,12 +35,16 @@ Post.hasMany(Like, {
   foreignKey: 'post_id',
 });
 
-// Build one-to-many relationship between User and Like.
-User.hasMany(Like, {
+// Build many-to-one relationship between Post and User.
+Post.belongsTo(User, {
   foreignKey: 'user_id',
 });
-// Build one-to-many relationship between User and Favorites.
-User.hasMany(Favorites, {
+
+Comment.belongsTo(Post, {
+  foreignKey: 'post_id',
+});
+
+Comment.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
