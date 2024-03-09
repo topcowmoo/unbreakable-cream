@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 12.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 3px solid var(--dark-accent-color);
+    background-color: whitesmoke;
+    background-image: url('/images/Healthy-meal-prep-ideas-Elizabeth-Rider.jpg'); 
+    background-size: cover;
+}
+.header {
+    color: whitesmoke;
+    margin-left: 35%;
+}
+
+.form-element{
+    margin: 4% 4% 4% 4%;
+        
+}
+        
+.form-element label{
+    display: block; 
+    margin-bottom: 0.5em; 
+    text-align: left;
+    color: whitesmoke;
+}
+        
+.form-element input{
+    margin-left: 2%;
+    border: 2px solid black;
+    padding: 1%;
+    width: 60%;
+}
+       
+.form-element input[type="text"] {
+    display: block;  
+    width: 70%;     
+    margin: 10px auto; 
+    padding: 1%;    
+}
+.submit {
+    margin-left: 35%;
+}      
