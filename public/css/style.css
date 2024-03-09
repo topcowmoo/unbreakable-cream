@@ -1,0 +1,104 @@
+/* Global styles */
+* {
+  font-family: 'Inter';
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* Root variables */
+:root {
+  --primary-color: #ff7208;
+  --secondary-color: #f15c00;
+  --accent-color: #1978c7;
+  --dark-accent-color: #000;
+  --background-color: #fcc9c0;
+}
+
+/* Navigation bar */
+.nav-bar {
+  background-color: var(--background-color);
+  color: var(--dark-accent-color);
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav-bar ul {
+  display: flex;
+  width: 30%;
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
+  padding-left: 0px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav-bar ul li {
+  margin: 4%;
+}
+
+.nav-bar ul li:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+/* Submit button */
+.submit {
+  width: 30%;
+  padding: 2%;
+  margin-left: 0%;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: var(---secondary-color);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--dark-accent-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+footer h4 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer a {
+  margin: 1%;
+  text-decoration: none;
+  color: var(--dark-accent-color);
+}
+
+.navbar-brand {
+  animation: heartbeat 3s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
