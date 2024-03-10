@@ -1,0 +1,18 @@
+<link rel='stylesheet' href='/css/createpost.css' />
+<div class='edit-post-box'>
+  <h2>Edit Post</h2>
+  <form id='edit-post-form'>
+    <label for='title'>Title:</label><br />
+    <input
+      type='text'
+      id='title'
+      class='title'
+      name='title'
+      value='{{title}}'
+    /><br />
+    <label for='edit-post'>Body:</label><br />
+    <textarea id='edit-post' name='edit-post'>{{body}}</textarea>
+    <input type='submit' class='submit' />
+  </form>
+</div>
+<script src='/js/editPost.js'></script>
