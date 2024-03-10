@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/createpost.css">
+<div class="new-post-box">
+    <div class="posts">
+        <section class="card" data-id="{{id}}">
+            <div class="card-head">
+                <h3>{{title}}</h3>
+                <div>
+                    <div class="card-options" style="display:none" data-currentUser="{{currentUser}}">
+                        <p id="edit" class="edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></p>
+                        <p id="delete" class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></p>
+                    </div>
+                    <p>Posted by <span id="username">{{user.username}}</span> at {{format_date updatedAt}}</p>
+                </div>
+            </div>
+            <div class="card-body">
+                {{post_content}}
+            </div>
+        </section>
+    </div>
+    <div class="comments">
+        <h2>Comments:</h2>
+        {{#each comments}}
+        {{> viewPostAndComments }}
+        {{/each}}
+        <h3 id="leave-comment">Leave a comment:</h3>
+        <form id="new-comment-form" data-id={{post_id}}>
+            <textarea id="new-comment"></textarea>
+            <input type="submit" class="submit submit-comment">
+        </form>
+    </div>
+</div>
+<script src="/js/viewComments.js"></script>

@@ -2,7 +2,7 @@ const dashboardBtn = document.querySelector('#dashboardbtn');
 const homeBtn = document.querySelector('#homebtn');
 const loginBtn = document.querySelector('#loginbtn');
 const postBtn = document.querySelector('#postbtn');
-
+const postCard = document.querySelectorAll('.card-title');
 
 
 // Go to home page
@@ -35,7 +35,17 @@ const loginBtnHandler = (event) =>{
 };
 
 
+// Go to a new page to comment on a post you are seeing
+const postCardHandler = (event) => {
+  event.preventDefault();
 
+  const cardId = event.target.getAttribute('id');
+
+  // console.log(event.path[0].attributes[1].value);
+  if(cardId !== ''){
+    document.location.replace(`/post/${cardId}`);
+  }
+};
 
 
 
@@ -50,3 +60,6 @@ if(postBtn){
 if(loginBtn){
   loginBtn.addEventListener('click', loginBtnHandler);
 }
+postCard.forEach(element =>{
+  element.addEventListener('click', postCardHandler);
+});

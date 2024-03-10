@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
       include: [{ model: User, attributes: ['username',]}]
     });
     const posts = postData.map((post) => post.get({ plain:true}));
+    console.log('Fetched Posts:', posts); // Log the fetched posts to the terminal
     // send to homepage.handlebars
     res.render('homepage', {
       posts,
@@ -29,8 +30,9 @@ router.get('/dashboard', withAuth, async (req, res) => {
         where: { username: req.session.username },
       }]
     });
-    const posts = postData.map((post) => post.get({ plain: true }));
 
+    const posts = postData.map((post) => post.get({ plain: true }));
+    console.log('Fetched Posts:', posts); // Log the fetched posts to the terminal
     // Send to dashboard.handlebars
     res.render('dashboard', {
       posts,
@@ -80,7 +82,7 @@ router.get('/post/:id', withAuth, async (req, res) =>{
     });
     const post = postData.get({ plain: true });
     // send to post.handlebars
-    res.render('viewPost', {
+    res.render('viewComments', {
       ...post,
       loggedIn: req.session.loggedIn,
     });
