@@ -1,0 +1,38 @@
+/* Styling for editing post */
+.edit-post-box{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
+    background-image: url('/images/mealprep.png');
+}
+
+/* Styling for the forms */
+#edit-post-form {
+    border: 3px solid var(--dark-blue);
+    /* background-color:  */
+    margin: 2%;
+}
+#edit-post-form{
+    padding: 7%;
+}
+
+#edit-post-form label{
+    font-size: 24px;
+    color: whitesmoke;
+}
+#edit-post-form .title-update{
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+#edit-post-form textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid black;
+}
+#edit-post-form textarea{
+    height: 25%;
+    margin-bottom: 5%;
+}
+
