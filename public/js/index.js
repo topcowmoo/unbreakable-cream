@@ -41,9 +41,6 @@ const loginBtnHandler = (event) =>{
 
 
 
-
-
-
 // Assign elements to handlers
 homeBtn.addEventListener('click', homeHandler);
 dashboardBtn.addEventListener('click', dashboardHandler);
