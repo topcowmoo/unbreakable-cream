@@ -18,7 +18,8 @@ const getTableData = async () => {
 };
 
 getTableData();
-const updatePost = async () => {
+const updatePost = async (event) => {
+  event.preventDefault();
   try {
     const postId = window.location.pathname.split('/').pop(); // Replace 'your_post_id' with the actual post_id
     const response = await fetch(`/api/posts/${postId}`, {
@@ -33,6 +34,7 @@ const updatePost = async () => {
     });
     const data = await response.json();
     console.log('Updated post:', data);
+    document.location.replace('/dashboard');
   } catch (error) {
     console.error('Error updating post: ', error);
   }
