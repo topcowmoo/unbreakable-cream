@@ -10,7 +10,7 @@
 
 <p align="center">
   
-A social recipe platform enabling users to discover, post, comment on, like, and favorite recipes shared by a vibrant community of home cooks and culinary enthusiasts.
+A social recipe platform enabling users to discover, post and comment on, recipes shared by a vibrant community of home cooks and culinary enthusiasts.
 
 <br />
     <a href="https://github.com/topcowmoo/unbreakable-cream"><strong>Explore the docs</strong></a>
@@ -128,14 +128,15 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Sahil Banati - [@github](https://github.com/sbanati) - smbanati@gmail.com
-Jianing Zhou - [@github](https://github.com/Joyce77777777) - ccata9328@gmail.com
-Saran Anthony - [@github](https://github.com/anthosaran)
-Brock Lockhart-Doyle - [@github](https://github.com/blockdoyle) - blockdoyle@gmail.com
-Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
+- Sahil Banati - [@github](https://github.com/sbanati) - smbanati@gmail.com
+- Jianing Zhou - [@github](https://github.com/Joyce77777777) - ccata9328@gmail.com
+- Saran Anthony - [@github](https://github.com/anthosaran)
+- Brock Lockhart-Doyle - [@github](https://github.com/blockdoyle) - blockdoyle@gmail.com
+- Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
 
 Deployed Link: [https://unbreakable-cream-798945248a5e.herokuapp.com/](https://unbreakable-cream-798945248a5e.herokuapp.com/)
+
 Project Link: [https://github.com/topcowmoo/unbreakable-cream](https://github.com/topcowmoo/unbreakable-cream)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
