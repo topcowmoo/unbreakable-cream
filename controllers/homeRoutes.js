@@ -1,14 +1,14 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth');
-const { User, Post, Comment, } = require('../models');
+const { User, Post, Comment } = require('../models');
 
 // GET route homepage
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
-      include: [{ model: User, attributes: ['username',]}]
+      include: [{ model: User, attributes: ['username'] }],
     });
-    const posts = postData.map((post) => post.get({ plain:true}));
+    const posts = postData.map((post) => post.get({ plain: true }));
     console.log('Fetched Posts:', posts); // Log the fetched posts to the terminal
     // send to homepage.handlebars
     res.render('homepage', {
@@ -16,19 +16,20 @@ router.get('/', async (req, res) => {
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
-    res.status(500).json({error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
-
 
 // GET route dashboard
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
-      include: [{
-        model: User,
-        where: { username: req.session.username },
-      }]
+      include: [
+        {
+          model: User,
+          where: { username: req.session.username },
+        },
+      ],
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
@@ -37,10 +38,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
     res.render('dashboard', {
       posts,
       loggedIn: req.session.loggedIn,
-      currentUser: req.session.username
+      currentUser: req.session.username,
     });
   } catch (err) {
-    res.status(500).json({error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
@@ -50,7 +51,7 @@ router.get('/login', (req, res) => {
     // send to login.handlebars
     res.render('login');
   } catch (err) {
-    res.status(500).json({error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
@@ -58,25 +59,24 @@ router.get('/login', (req, res) => {
 router.get('/createPost', withAuth, (req, res) => {
   try {
     // send to createPost.handlebars
-    res.render('createPost',
-      {
-        loggedIn: req.session.loggedIn,
-        user: {username: req.session.username}
-      });
-  }catch (err){
+    res.render('createPost', {
+      loggedIn: req.session.loggedIn,
+      user: { username: req.session.username },
+    });
+  } catch (err) {
     res.json(err);
   }
 });
 
 // GET post and comment by ID
-router.get('/post/:id', withAuth, async (req, res) =>{
+router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
-        {model: User, attributes: ['username']},
+        { model: User, attributes: ['username'] },
         {
           model: Comment,
-          include: [{ model: User, attributes: ['username']}],
+          include: [{ model: User, attributes: ['username'] }],
         },
       ],
     });
@@ -86,10 +86,8 @@ router.get('/post/:id', withAuth, async (req, res) =>{
       ...post,
       loggedIn: req.session.loggedIn,
     });
-
   } catch (err) {
-
-    res.status(500).json({error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
@@ -110,12 +108,12 @@ router.get('/editpost/:id', withAuth, async (req, res) => {
       return;
     }
     const post = postData.get({ plain: true });
-    res.render('editpost', {
-      ...post,
+    res.render('editPost', {
+      post,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
-    res.status(500).json({error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 

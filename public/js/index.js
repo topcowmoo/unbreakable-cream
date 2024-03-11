@@ -4,6 +4,7 @@ const loginBtn = document.querySelector('#loginbtn');
 const postBtn = document.querySelector('#postbtn');
 const postCard = document.querySelectorAll('.card-title');
 const editbtnEl = document.querySelector('.editbtn');
+const deletebtnEl = document.querySelector('.deletebtn');
 
 // Go to home page
 const homeHandler = (event) => {
@@ -49,13 +50,44 @@ const postCardHandler = (event) => {
 const editPostHandler = (event) => {
   event.preventDefault();
 
-  const postId = event.target.getAttribute('id');
+  // Get ID from H3 tag
+  const postId = document.querySelector('.editbtn').getAttribute('data-edited');
+  // const postId = event.target.getAttribute('data-edited');
 
   console.log(postId);
 
   if (postId !== '') {
-    console.log('replace');
+    // console.log('replace');
     document.location.replace(`/editpost/${postId}`);
+  }
+};
+
+// Delete a post
+const deletePostHandler = async (event) => {
+  event.preventDefault();
+
+  // Get ID from H3 tag
+  const postId = document
+    .querySelector('.deletebtn')
+    .getAttribute('data-deleted');
+  // const postId = event.target.getAttribute('data-deleted');
+
+  console.log(postId);
+
+  if (postId !== '') {
+    try {
+      const response = await fetch(`/api/posts/${postId}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        document.location.replace('/dashboard');
+      } else {
+        alert('Failed to delete post');
+      }
+    } catch (error) {
+      console.error('Error deleting post:', error);
+    }
   }
 };
 
@@ -72,3 +104,4 @@ postCard.forEach((element) => {
   element.addEventListener('click', postCardHandler);
 });
 editbtnEl.addEventListener('click', editPostHandler);
+deletebtnEl.addEventListener('click', deletePostHandler);
