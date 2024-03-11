@@ -1,51 +1,107 @@
 /* Styling for creating new post or comment */
-.new-post-box{
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 2%;
-    background-image: url('/images/mealprep.png');
+.new-post-box {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  padding: 1%;
+  background-color: rgba(46, 142, 220, 0.7);
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5); /* Adjusted horizontal offset */
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+h2,
+h3 {
+  color: whitesmoke;
+  margin-top: 3%;
+  font-size: 28px;
+}
+
+#leave-comment {
+    font-size: 22px;
 }
 
 /* Styling for the forms */
-#new-post-form, #new-comment-form{
-    border: 3px solid var(--dark-blue);
-    /* background-color:  */
-    margin: 2%;
+#new-post-form,
+#new-comment-form {
+  border: 3px solid var(--dark-blue);
+  /* background-color:  */
+  margin: 2%;
 }
-#new-post-form{
-    padding: 7%;
+
+#new-post-form {
+  padding: 7%;
 }
-#new-comment-form{
-    padding: 2%;
+#new-comment-form {
+  padding: 2%;
 }
-#new-post-form label{
-    font-size: 24px;
-    color: whitesmoke;
+#new-post-form label {
+  font-size: 24px;
+  color: whitesmoke;
 }
-#new-post-form .title{
-    width: 100%;
-    margin-bottom: 5%;
-    padding: 1%;
-    border: 1px solid black;
+#new-post-form .title {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
-#new-post-form textarea, #new-comment-form textarea{
-    width: 100%;
-    padding: 2%;
-    border: 1px solid black;
+#new-post-form textarea,
+#new-comment-form textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
-#new-post-form textarea{
-    height: 25%;
-    margin-bottom: 5%;
+#new-post-form textarea {
+  height: 25%;
+  margin-bottom: 5%;
 }
-#new-comment-form textarea{
-    height: 10%;
-    margin-bottom: 2%;
+#new-comment-form textarea {
+  height: 10%;
+  margin-bottom: 2%;
 }
 
 /* styling applied to the comment button  */
-.submit-comment{
-    width: 10%;
-    padding: 1%;
-    margin-right: 45%;
-    margin-left: 45%;
+.submit-comment {
+  width: 10%;
+  padding: 1%;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+
+.submit {
+  margin-left: 35%;
+  margin-top: 3%;
+  padding: 1%;
+  width: 30%;
+  border-radius: 9px;
+}
+
+footer {
+  position: fixed;
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  .new-post-box {
+    width: 90%; /* Adjusted width for smaller screens */
+    margin-left: 5%; /* Center the box */
+    margin-bottom: 15%;
+  }
+  #new-post-form,
+  #new-comment-form {
+    padding: 5%; /* Adjusted padding for smaller screens */
+  }
+  #new-post-form textarea {
+    height: 10%; /* Adjusted height for smaller screens */
+  }
+  .submit-comment,
+  .submit {
+    width: 50%; /* Adjusted width for smaller screens */
+    margin-left: 25%; /* Center the button */
+    margin-right: 25%; /* Center the button */
+  }
 }
