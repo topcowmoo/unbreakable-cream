@@ -58,12 +58,12 @@ body {
 
 .submit:hover {
   cursor: pointer;
-  background-color: var(---secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* Footer */
 footer {
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: var(--background-color);
@@ -100,5 +100,22 @@ footer a {
   }
   100% {
     transform: scale(0.9);
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 1%;
+  }
+
+  .nav-bar ul {
+    width: 100%; /* Full width on small screens */
+    justify-content: center; /* Center list items horizontally */
+  }
+
+  .submit {
+    width: 100%; /* Full width on small screens */
   }
 }

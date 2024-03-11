@@ -1,86 +1,93 @@
 /* Styling for login box */
-.log-in-card{
-    display: flex;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 12.5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 2%;
-    border: 3px solid var(--dark-accent-color);
-    background-color: whitesmoke;
-    background-image: url('/images/steaklog.png'); 
-    background-size: cover;
+.log-in-card {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 12.5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 2%;
+  border: 3px solid var(--dark-accent-color);
+  background-color: whitesmoke;
+  background-image: url('/images/steaklog.png');
+  background-size: cover;
 }
-.log-in{
-    width: 50%;
-    border-right: 3px solid var(--background-color)
+.log-in {
+  width: 50%;
+  border-right: 3px solid var(--background-color);
 }
 
 .log-in h2 {
-    color: whitesmoke;
-    margin-left: 35%;
+  color: whitesmoke;
+  margin-left: 35%;
 }
 
 .create-profile h2 {
-    color: whitesmoke;
-    margin-left: 35%;
+  color: whitesmoke;
+  margin-left: 35%;
 }
 
-
-
-.create-profile{
-    width: 50%;
-    margin-left: 1%;
+.create-profile {
+  width: 50%;
+  margin-left: 1%;
 }
-.form-element{
-    margin: 4% 4% 4% 4%;
-
+.form-element {
+  margin: 4% 4% 4% 4%;
 }
 
 .submit {
-    margin-left: 35%;
+  margin-left: 25%;
+  padding: 3%;
+  width: 50%;
 }
 
-.form-element label{
-    display: block; /* Makes label take the full width of its container */
-    margin-bottom: 0.5em; /* Spacing between label and input */
-    text-align: left;
-    color: whitesmoke;
+.form-element label {
+  display: block; /* Makes label take the full width of its container */
+  margin-bottom: 0.5em; /* Spacing between label and input */
+  text-align: left;
+  color: whitesmoke;
 }
 
-.form-element input{
-    margin-left: 2%;
-    border: 2px solid black;
-    padding: 1%;
-    width: 60%;
+.form-element input {
+  margin-left: 2%;
+  border: 2px solid black;
+  padding: 1%;
+  width: 60%;
 }
-.form-control{
-    width: 100%;
+.form-control {
+  width: 100%;
 }
 
 /* Align input fields and buttons */
-.form-element input[type="text"],
-.form-element input[type="password"],
-.form-element input[type="email"],
-.form-element input[type="submit"] {
-    display: block;  /* Aligns the input/button to the block (full width of the container) */
-    width: 70%;     /* Sets a specific width of the input/button */
-    margin: 10px auto; /* Centers the input/button with automatic margins on the sides */
-    padding: 1%;    /* Adjust padding as necessary */
-   
+.form-element input[type='text'],
+.form-element input[type='password'],
+.form-element input[type='email'],
+.form-element input[type='submit'] {
+  display: block; /* Aligns the input/button to the block (full width of the container) */
+  width: 70%; /* Sets a specific width of the input/button */
+  margin: 20px auto; /* Centers the input/button with automatic margins on the sides */
+  padding: 1%; /* Adjust padding as necessary */
 }
-
-
 
 /* Styling for messages if login/register fails */
-.message{
-    margin: 3%;
-    text-align: center;
+.message {
+  margin: 3%;
+  text-align: center;
 }
-.login-failed, .register-failed{
-    color: whitesmoke
+.login-failed,
+.register-failed {
+  color: whitesmoke;
 }
-.register-success{
-    color: whitesmoke
+.register-success {
+  color: whitesmoke;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .log-in-card {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-left: 10%; /* Adjust left margin for centering on smaller screens */
+    margin-right: 10%; /* Adjust right margin for centering on smaller screens */
+    margin-bottom: 15%;
+  }
 }

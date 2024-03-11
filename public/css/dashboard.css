@@ -9,8 +9,8 @@ body {
   background: rgb(245, 245, 245);
   background: radial-gradient(
     circle,
-    rgba(245, 245, 245, 1) 35%,
-    rgb(255, 242, 230) 100%
+    rgb(255, 255, 255) 35%,
+    rgb(254, 229, 224) 100%
   );
 }
 
@@ -21,7 +21,7 @@ body {
   margin: 2.5% auto;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
+  border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
@@ -64,8 +64,24 @@ body {
   margin-left: 7%;
   margin-right: 7%;
   padding-top: 2%;
+  margin-bottom: 12%;
 }
 
 .posts {
   width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 90%; /* Adjust card width for smaller screens */
+    margin: 5% auto; /* Center card on smaller screens */
+  }
+
+  .dashboard {
+    width: 90%; /* Adjust dashboard width for smaller screens */
+    margin-left: 5%; /* Center dashboard on smaller screens */
+    margin-right: 5%;
+    margin-bottom: 15%;
+  }
 }

@@ -1,0 +1,81 @@
+/* Styling for editing post or comment */
+.edit-post-box {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  padding: 1%;
+  background-color: rgba(46, 142, 220, 0.7);
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5); /* Adjusted horizontal offset */
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.edit-post-box label[for='title'],
+.edit-post-box label[for='edit-post'] {
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+#edit-post-form {
+  padding: 7%;
+}
+#edit-comment-form {
+  padding: 2%;
+}
+
+#edit-post-form .title {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#edit-post-form textarea,
+#edit-comment-form textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#edit-post-form textarea {
+  height: 15%;
+  margin-bottom: 5%;
+}
+
+/* styling applied to the submit button  */
+
+.submit-button {
+  width: 10%;
+  padding: 1%;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+
+.submit {
+  margin-left: 35%;
+  margin-top: 3%;
+  padding: 1%;
+  width: 30%;
+  border-radius: 9px;
+}
+
+footer {
+  position: fixed;
+}
+
+h2 {
+  color: whitesmoke;
+  margin-top: 3%;
+  font-size: 28px;
+}
+
+/* Media Queries for editing post or comment */
+@media only screen and (max-width: 768px) {
+  .edit-post-box {
+    width: 90%; /* Adjusted width for smaller screens */
+    margin-left: 5%; /* Center the box */
+    margin-bottom: 25%;
+  }
+}
