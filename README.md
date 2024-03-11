@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/unbreakable-cream">
-    <img src="./public/images/logo.gif" alt="Logo" width="100" height="100">
+    <img src="./public/images/logo.png" alt="Logo" width="150" height="150">
   </a>
 
 <h3 align="center">Unbreakable Cream</h3>
@@ -128,7 +128,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Sahil Banati - [@github](https://github.com/sbanati) - esmbanati@gmail.com
+Sahil Banati - [@github](https://github.com/sbanati) - smbanati@gmail.com
 Jianing Zhou - [@github](https://github.com/Joyce77777777) - ccata9328@gmail.com
 Saran Anthony - [@github](https://github.com/anthosaran)
 Brock Lockhart-Doyle - [@github](https://github.com/blockdoyle) - blockdoyle@gmail.com
@@ -144,14 +144,18 @@ Project Link: [https://github.com/topcowmoo/unbreakable-cream](https://github.co
 
 ## Acknowledgments
 
-- Project Manager - Daler Singh - [@linkedin](https://www.linkedin.com/in/daler7/?originalSubdomain=ca)
-- Project Manager - Sachin Jhaveri - [@linkedin](https://www.linkedin.com/in/sachin-jhaveri-42436280/?originalSubdomain=ca)
+- Daler Singh - Project Manager - [@linkedin](https://www.linkedin.com/in/daler7/?originalSubdomain=ca)
+- Sachin Jhaveri - Project Manager - [@linkedin](https://www.linkedin.com/in/sachin-jhaveri-42436280/?originalSubdomain=ca)
 - Sahil Banati - [@github](https://github.com/sbanati) 
 - Brock Lockhart-Doyle - [@github](https://github.com/blockdoyle)
 - Jianing Zhou - [@github](https://github.com/Joyce77777777)
 - Saran Anthony - [@github](https://github.com/anthosaran)
 - Team Lead - Salvatore Mammoliti - [@github](https://github.com/topcowmoo)
-  
+- ChatGPT - [@OpenAI Chat](https://chat.openai.com/)
+- Markdown Badges - [@Markdown Badges](https://ileriayo.github.io/markdown-badges/#usage)
+- Adobe Fonts - [@Adobe Fonts](https://new.express.adobe.com/)
+- Font Awesome - [@Font Awesome](https://fontawesome.com/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
