@@ -1,10 +1,14 @@
+// Import required modules
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// Define the Like class extending Sequelize Model
 class Like extends Model {}
 
+// Initialize the Like model with defined properties and associations
 Like.init(
   {
+    // Define columns for the Like table
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -28,6 +32,7 @@ Like.init(
     },
   },
   {
+    // Configure the model with Sequelize options
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -36,4 +41,5 @@ Like.init(
   },
 );
 
+// Export the Like model
 module.exports = Like;

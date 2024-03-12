@@ -120,6 +120,15 @@ router.post('/logout', (req, res) =>{
   }
 });
 
+
+
+/*like and Fav routes were "Nice-To-Have" features for the MVP but not a priority,
+we have created some starting points in the schema, models and routes for this
+functionality and when continueing this app development have a starting point */
+
+
+
+
 //Post route to like a post
 router.post('/:userId/like/:postId', async (req, res) => {
   try {

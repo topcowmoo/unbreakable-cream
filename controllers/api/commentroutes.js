@@ -35,11 +35,6 @@ router.post('/', withAuth, async (req, res) => {
 
 
 
-
-
-
-
-
 //Update an existing comment with the user logged in.
 router.put('/:id', withAuth, async (req, res) => {
   try {

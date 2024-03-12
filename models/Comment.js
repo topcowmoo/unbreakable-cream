@@ -1,10 +1,14 @@
+// Import required modules
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Create model for Comments
 class Comment extends Model {}
+
+// Initialize the Comment model with defined properties and associations
 Comment.init(
   {
+    // Define columns for the Comment table
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -12,7 +16,7 @@ Comment.init(
       autoIncrement: true,
     },
     comment_text: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1],
@@ -34,6 +38,7 @@ Comment.init(
     },
   },
   {
+    // Configure the model with Sequelize options
     sequelize,
     timestamps: true,
     freezeTableName: true,
@@ -42,4 +47,5 @@ Comment.init(
   },
 );
 
+// Export the Comment model
 module.exports = Comment;
