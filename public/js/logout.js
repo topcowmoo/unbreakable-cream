@@ -1,7 +1,10 @@
+// Logout button
 const logoutBtn = document.querySelector('#logoutbtn');
 
+// Logout button handler
 const logoutBtnHandler = async () => {
   try {
+    // Send a POST request to log out the user
     const response = await fetch('/api/users/logout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -19,6 +22,7 @@ const logoutBtnHandler = async () => {
   }
 };
 
+// Attach logout button handler to click event
 if (logoutBtn) {
   logoutBtn.addEventListener('click', logoutBtnHandler);
 }
