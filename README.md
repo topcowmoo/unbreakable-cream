@@ -16,7 +16,7 @@ A social recipe platform enabling users to discover, post and comment on, recipe
     <a href="https://github.com/topcowmoo/unbreakable-cream"><strong>Explore the docs</strong></a>
     <br />
     <br />
-    <a href="https://unbreakable-cream-798945248a5e.herokuapp.com/">Deployed app on Heroku</a>
+    <a href="https://unbreakable-cream-a4b95d823c2c.herokuapp.com/">Deployed app on Heroku</a>
     · 
     <a href="https://github.com/topcowmoo/unbreakable-cream/issues">Report Bug</a>
     ·
@@ -135,7 +135,7 @@ Don't forget to give the project a star! Thanks again!
 - Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
 
-Deployed Link: [https://unbreakable-cream-798945248a5e.herokuapp.com/](https://unbreakable-cream-798945248a5e.herokuapp.com/)
+Deployed Link: [https://unbreakable-cream-a4b95d823c2c.herokuapp.com/](https://unbreakable-cream-a4b95d823c2c.herokuapp.com/)
 
 Project Link: [https://github.com/topcowmoo/unbreakable-cream](https://github.com/topcowmoo/unbreakable-cream)
 
